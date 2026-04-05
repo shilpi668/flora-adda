@@ -1,0 +1,17 @@
+{
+  "id": "ORD-T6AHDHF8F",
+  "customerName": "shilpi kumari",
+  "customerEmail": "shilpimuz06@gmail.com",
+  "customerPhone": "9142189545",
+  "address": "NIR colony Vit gate no 2",
+  "city": "Jaipur",
+  "pincode": "302017",
+  "totalAmount": 1599,
+  "paymentMethod": "Cash on Delivery",
+  "items": [
+    {
+      "productId": 3,
+      "quantity": 1
+    }
+  ]
+}

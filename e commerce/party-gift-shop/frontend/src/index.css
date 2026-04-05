@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1DB954; /* Vibrant Green */
+  --secondary: #FFA500; /* Orange/Yellow */
+  --background: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  background-color: var(--background);
+  color: #333333;
+}
+
+/* Custom Utilities for smooth transitions */
+.smooth-hover {
+  transition: all 0.2s ease-in-out;
+}
