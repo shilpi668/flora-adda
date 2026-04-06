@@ -54,7 +54,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <div className="bg-[#fbbf24] px-4 py-1.5 rounded-md font-black text-xl tracking-wide text-black shadow-sm">
-            Flora
+            Flora-adda
           </div>
         </Link>
 

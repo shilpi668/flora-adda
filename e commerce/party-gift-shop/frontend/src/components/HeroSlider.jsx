@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slidess = [
-  'https://images.unsplash.com/photo-1530103862676-de8892795bf0?q=80&w=1920&auto=format&fit=crop', 
-  'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1920&auto=format&fit=crop', 
+  '/birthday_blue_sequin.png',
+  '/birthday_cars.png',
+  '/birthday_60.png',
+  'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1920&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1920&auto=format&fit=crop'
 ];
 
@@ -29,15 +31,15 @@ const HeroSlider = () => {
   return (
     <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden bg-gray-100">
       {/* Slides */}
-      <div 
+      <div
         className="flex h-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slidess.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
-            <img 
-              src={slide} 
-              alt={`Slide ${index + 1}`} 
+            <img
+              src={slide}
+              alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
             />
             {/* Optional Overlay if text is needed inside the slider */}
@@ -47,13 +49,13 @@ const HeroSlider = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <button 
+      <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 text-white flex items-center justify-center rounded-full transition-colors"
       >
         <ChevronLeft size={24} />
       </button>
-      <button 
+      <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 text-white flex items-center justify-center rounded-full transition-colors"
       >
